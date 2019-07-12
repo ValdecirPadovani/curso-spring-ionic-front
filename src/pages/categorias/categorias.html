@@ -8,5 +8,12 @@
 </ion-header>
 
 <ion-content padding>
-<p>Página de Categotias</p>
+  <ion-list>
+    <button ion-item *ngFor="let item of itens">
+      <ion-thumbnail itemstart>
+        <img src="{{bucketUrl}}/cat{{item.id}}.jpg">
+      </ion-thumbnail>
+      <h2>{{item.name}}</h2>
+    </button>
+  </ion-list>
 </ion-content>
