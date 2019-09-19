@@ -46,4 +46,8 @@ export class HomePage {
     },
     error => {});
   }
+
+  signup(){
+    this.navCtrl.setRoot('SignupPage');
+  }
 }
