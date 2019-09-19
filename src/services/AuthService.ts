@@ -38,7 +38,6 @@ export class AuthService{
     }
 
     successfulLogin(authorizationValue : string){
-        console.log("DENTRO DO SUCESS "+authorizationValue);
         let tok = authorizationValue.substring(7);
         let user : LocalUser = {
             token : tok,
