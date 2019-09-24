@@ -27,5 +27,15 @@ export class ClienteService{
         console.log(url);
         return this.http.get(url,{responseType : 'blob'});
     }
+
+    insert( obj: ClienteDTO){
+        return this.http.post(
+            `${API_CONFIG.baseUrl}/clientes`, obj,
+            {
+                observe: 'response',
+                responseType: 'text'
+            } 
+        )
+    }
   
 }

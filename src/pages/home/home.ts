@@ -48,6 +48,6 @@ export class HomePage {
   }
 
   signup(){
-    this.navCtrl.setRoot('SignupPage');
+    this.navCtrl.push('SignupPage');
   }
 }
